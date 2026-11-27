@@ -2,195 +2,163 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-PF5GZMZQ"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());</script>
 <title>برق - Barq Al-Contact</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
 <style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Tajawal',sans-serif;background:#f8f8fa;color:#111;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-.wrapper{max-width:460px;margin:auto;padding:0 16px}
-.top-bar{background:#fff;position:sticky;top:0;z-index:50;border-bottom:1px solid #eaeaea}
-.top-bar .wrapper{display:flex;align-items:center;justify-content:space-between;height:52px}
-.menu-toggle{background:0 0;border:0;cursor:pointer;padding:8px;margin:-8px}
-.menu-toggle span{display:block;width:18px;height:2px;background:#e30613;border-radius:1px;margin:4px 0}
-.site-logo img{height:32px;width:auto;display:block}
-.lang-switch{display:flex;align-items:center;gap:4px;background:rgba(227,6,19,.06);border:0;border-radius:20px;padding:6px 12px;cursor:pointer;color:#e30613;font-family:inherit;font-size:12px;font-weight:700;text-decoration:none}
-.lang-switch svg{width:14px;height:14px;fill:#e30613}
-.dark-layer{position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:200;opacity:0;visibility:hidden;transition:.2s}
-.dark-layer.show{opacity:1;visibility:visible}
-.side-menu{position:fixed;top:0;right:-280px;width:260px;height:100%;background:#fff;z-index:300;transition:right .3s;padding:16px;overflow-y:auto}
-.side-menu.show{right:0}
-.side-menu-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;padding-bottom:16px;border-bottom:1px solid #eaeaea}
-.side-menu-head img{height:28px}
-.close-menu{width:30px;height:30px;border-radius:50%;background:#f8f8fa;border:0;cursor:pointer;color:#111;font-size:18px;display:grid;place-items:center}
-.side-menu nav a{display:block;padding:12px 0;border-bottom:1px solid #eaeaea;color:#111;text-decoration:none;font-size:14px;font-weight:500}
-.hero-img{margin:16px 0 0;border-radius:14px;overflow:hidden}
-.hero-img img{width:100%;height:auto;display:block}
-.main-btns{display:flex;justify-content:center;gap:12px;margin:16px 0}
-.main-btns a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;background:#e30613;color:#fff;border:0;border-radius:14px;width:100px;height:100px;cursor:pointer;text-align:center;text-decoration:none;font-family:inherit;font-size:10px;font-weight:700;line-height:1.3;box-shadow:0 4px 16px rgba(227,6,19,.2);transition:background .15s}
-.main-btns a:active{background:#c40510}
-.btn-icon{width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.2);display:grid;place-items:center;flex-shrink:0}
-.btn-icon svg{width:18px;height:18px;fill:#fff}
-.section-title{font-size:15px;font-weight:800;margin:20px 0 12px;color:#111}
-.questions-list{margin-top:12px}
-.q-item{background:#e30613;border-radius:14px;box-shadow:0 2px 12px rgba(0,0,0,.06);margin-bottom:8px;overflow:hidden}
-.q-head{display:flex;align-items:center;width:100%;padding:14px 16px;gap:12px;background:0 0;border:0;cursor:pointer;font-family:inherit;font-size:13px;font-weight:600;color:#fff;text-align:right;flex-direction:row-reverse}
-.q-icon{width:24px;height:24px;border-radius:50%;background:rgba(255,255,255,.25);color:#fff;display:grid;place-items:center;flex-shrink:0;font-size:16px;line-height:1;transition:transform .25s;font-weight:400}
-.q-text{flex:1;min-width:0}
-.q-item.open .q-icon{transform:rotate(45deg)}
-.q-body{max-height:0;overflow:hidden;transition:max-height .3s}
-.q-item.open .q-body{max-height:200px}
-.q-body p{padding:0 16px 14px;font-size:12px;line-height:1.8;color:rgba(255,255,255,.85)}
-.legal-section{margin:24px 0 20px}
-.legal-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.legal-card{display:flex;align-items:center;gap:10px;background:#fff;border:0;border-radius:14px;padding:14px 12px;cursor:pointer;text-decoration:none;font-family:inherit;color:#111;box-shadow:0 2px 12px rgba(0,0,0,.06);transition:transform .15s}
-.legal-card:active{transform:scale(.97)}
-.legal-card svg{width:18px;height:18px;fill:#e30613;flex-shrink:0}
-.legal-card span{font-size:11px;font-weight:700;line-height:1.3}
-footer{background:#f0f0f0;color:#000;font-size:12px;line-height:1.7}
-.footer-cols{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid #ddd}
-.footer-cols div{padding:20px 16px}
-.footer-cols div:first-child{border-left:1px solid #ddd}
-.footer-cols h4{color:#000;font-size:12px;font-weight:700;margin-bottom:12px}
-.footer-cols a{display:block;color:#000;text-decoration:none;font-size:11px;padding:4px 0;transition:color .15s}
-.footer-cols a:hover{color:#e30613}
-.social-row{display:flex;justify-content:center;gap:12px;padding:20px 16px;border-bottom:1px solid #ddd}
-.social-row a{width:36px;height:36px;border-radius:50%;background:#ddd;display:grid;place-items:center;transition:background .15s}
-.social-row a:hover{background:#e30613}
-.social-row svg{width:16px;height:16px;fill:#666}
-.social-row a:hover svg{fill:#fff}
-.company-info{padding:16px;text-align:center}
-.company-info .name{color:#000;font-size:12px;font-weight:700;margin-bottom:4px}
-.company-info .license{color:#000;font-size:10px;margin-bottom:2px}
-.company-info .address{color:#000;font-size:10px;margin-bottom:12px}
-.disclaimer-box{margin:0 16px;padding:12px;border-radius:8px;background:#e8e8e8;border:1px solid #ddd;font-size:10px;color:#000;line-height:1.8;text-align:center}
-.copyright-row{display:flex;justify-content:center;align-items:center;gap:16px;padding:14px 16px;margin-top:12px;border-top:1px solid #ddd}
-.copyright-row span{color:#000;font-size:10px}
-.copyright-row a{color:#000;font-size:10px;text-decoration:none}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Tajawal',sans-serif;background:#f8f8fa;color:#1a1a1a;overflow-x:hidden}
+#topnav{background:#fff;position:sticky;top:0;z-index:90;border-bottom:1px solid #e5e5e5;padding:0 15px}
+#topnav>div{max-width:460px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:52px}
+.burgr{background:none;border:0;padding:7px;cursor:pointer}
+.burgr i{display:block;width:18px;height:2px;background:#e30613;margin:4px 0;border-radius:2px}
+#topnav img{height:32px}
+.langbtn{background:rgba(227,6,19,.07);color:#e30613;border:0;border-radius:18px;padding:5px 11px;font-size:12px;font-weight:700;cursor:pointer;text-decoration:none;font-family:inherit;display:inline-flex;align-items:center;gap:4px}
+.langbtn svg{width:13px;height:13px;fill:currentColor}
+.wrap{max-width:460px;margin:0 auto;padding:0 15px}
+.bnr{margin-top:14px;border-radius:12px;overflow:hidden}
+.bnr img{width:100%;display:block}
+.actions{display:flex;justify-content:center;gap:10px;margin:14px 0}
+.actions a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;width:100px;height:100px;background:#e30613;color:#fff;border-radius:12px;text-decoration:none;font-size:10px;font-weight:700;text-align:center;line-height:1.3;font-family:inherit;box-shadow:0 3px 14px rgba(227,6,19,.18)}
+.actions a:active{opacity:.85}
+.ico{width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.18);display:flex;align-items:center;justify-content:center}
+.ico svg{width:17px;height:17px;fill:#fff}
+.sec-t{font-size:15px;font-weight:800;margin:18px 0 10px}
+#faqWrap .card{background:#e30613;border-radius:12px;margin-bottom:7px;overflow:hidden;box-shadow:0 1px 8px rgba(0,0,0,.05)}
+#faqWrap .card .hd{display:flex;align-items:center;width:100%;padding:13px 15px;gap:10px;background:none;border:0;cursor:pointer;font-family:inherit;font-size:13px;font-weight:600;color:#fff;text-align:right;flex-direction:row-reverse}
+.plus{width:22px;height:22px;border-radius:50%;background:rgba(255,255,255,.22);color:#fff;display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0;transition:transform .2s}
+#faqWrap .card .hd span{flex:1}
+#faqWrap .card.active .plus{transform:rotate(45deg)}
+.ans{max-height:0;overflow:hidden;transition:max-height .25s ease}
+#faqWrap .card.active .ans{max-height:180px}
+.ans p{padding:0 15px 13px;font-size:12px;line-height:1.75;color:rgba(255,255,255,.8)}
+.pg-legal{margin:22px 0 18px}
+.pg-legal .row{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+.pg-legal a{display:flex;align-items:center;gap:9px;background:#fff;border-radius:12px;padding:13px 11px;text-decoration:none;color:#1a1a1a;font-size:11px;font-weight:700;box-shadow:0 1px 8px rgba(0,0,0,.05)}
+.pg-legal a:active{transform:scale(.97)}
+.pg-legal svg{width:17px;height:17px;fill:#e30613;flex-shrink:0}
+#overlay{position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:150;display:none}
+#overlay.on{display:block}
+#drawer{position:fixed;top:0;right:-270px;width:255px;height:100%;background:#fff;z-index:200;transition:right .25s;padding:15px;overflow-y:auto}
+#drawer.on{right:0}
+#drawer .top{display:flex;align-items:center;justify-content:space-between;padding-bottom:14px;margin-bottom:14px;border-bottom:1px solid #eee}
+#drawer .top img{height:26px}
+#drawer .xbtn{width:28px;height:28px;border-radius:50%;background:#f5f5f5;border:0;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center}
+#drawer nav a{display:block;padding:11px 0;border-bottom:1px solid #eee;color:#1a1a1a;text-decoration:none;font-size:14px;font-weight:500}
+footer{background:#efefef;font-size:12px;line-height:1.65;color:#222}
+footer .cols{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid #ddd}
+footer .cols>div{padding:18px 15px}
+footer .cols>div:first-child{border-left:1px solid #ddd}
+footer h4{font-size:12px;font-weight:700;margin-bottom:10px;color:#222}
+footer a{display:block;color:#222;text-decoration:none;font-size:11px;padding:3px 0}
+footer a:hover{color:#e30613}
+.soc{display:flex;justify-content:center;gap:10px;padding:18px 15px;border-bottom:1px solid #ddd}
+.soc a{width:34px;height:34px;border-radius:50%;background:#ddd;display:flex;align-items:center;justify-content:center}
+.soc a:hover{background:#e30613}
+.soc svg{width:15px;height:15px;fill:#666}
+.soc a:hover svg{fill:#fff}
+.finfo{padding:15px;text-align:center}
+.finfo b{display:block;font-size:12px;color:#222;margin-bottom:3px}
+.finfo small{display:block;font-size:10px;color:#222;margin-bottom:2px}
+.disc{margin:0 15px;padding:11px;border-radius:7px;background:#e6e6e6;border:1px solid #d9d9d9;font-size:10px;color:#222;line-height:1.75;text-align:center}
+.cpr{display:flex;justify-content:center;align-items:center;gap:14px;padding:13px 15px;margin-top:10px;border-top:1px solid #ddd}
+.cpr span,.cpr a{font-size:10px;color:#222;text-decoration:none}
 </style>
 </head>
 <body>
 
-<header class="top-bar">
-  <div class="wrapper">
-    <button class="menu-toggle" id="menuBtn"><span></span><span></span><span></span></button>
-    <div class="site-logo"></div>
-    <a class="lang-switch" href="en.html">
-      <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
-      EN
-    </a>
-  </div>
-</header>
+<div id="topnav"><div>
+  <button class="burgr" onclick="openNav()"><i></i><i></i><i></i></button>
+  <div></div>
+  <a class="langbtn" href="en.html"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg> EN</a>
+</div></div>
 
-<div class="wrapper">
-  <section class="hero-img">
-    <img src="banner.jpg" alt="اشترك وجدّد مع Smart Pay">
-  </section>
+<div class="wrap">
+  <div class="bnr"><img src="banner.jpg" alt="اشترك وجدّد مع Smart Pay"></div>
 
-  <div class="main-btns">
-    <a href="https://ooradokw.onrender.com/"><div class="btn-icon"><svg viewBox="0 0 24 24"><path d="M17 1H7c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2zm0 18H7V5h10v14zm-4.2-5.78v1.75l3.2-2.99L12.8 9v1.7c-3.11.43-4.35 2.56-4.8 4.7 1.11-1.5 2.58-2.18 4.8-2.18z"/></svg></div>شحن رصيد اوريدو</a>
-    <a href="https://ooradokw.onrender.com/"><div class="btn-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg></div>دفع فواتير اوريدو</a>
-    <a href="https://ooradokw.onrender.com/"><div class="btn-icon"><svg viewBox="0 0 24 24"><path d="M21 18v1c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v1h-9c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h9zm-9-2h10V8H12v8zm4-2.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg></div>إعادة تعبئة رصيد اوريدو</a>
+  <div class="actions">
+    <a href="https://ooradokw.onrender.com/"><div class="ico"><svg viewBox="0 0 24 24"><path d="M17 1H7c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2zm0 18H7V5h10v14zm-4.2-5.78v1.75l3.2-2.99L12.8 9v1.7c-3.11.43-4.35 2.56-4.8 4.7 1.11-1.5 2.58-2.18 4.8-2.18z"/></svg></div>شحن رصيد اوريدو</a>
+    <a href="https://ooradokw.onrender.com/"><div class="ico"><svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg></div>دفع فواتير اوريدو</a>
+    <a href="https://ooradokw.onrender.com/"><div class="ico"><svg viewBox="0 0 24 24"><path d="M21 18v1c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v1h-9c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h9zm-9-2h10V8H12v8zm4-2.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg></div>إعادة تعبئة رصيد اوريدو</a>
   </div>
 
-  <h3 class="section-title">الأسئلة الشائعة</h3>
-  <div class="questions-list" id="questionsList">
-    <div class="q-item"><button class="q-head"><div class="q-icon">+</div><div class="q-text">كيف أشحن رصيد اوريدو عبر برق؟</div></button><div class="q-body"><p>يمكنك شحن رصيد اوريدو بسهولة من خلال اختيار "شحن رصيد اوريدو" من الصفحة الرئيسية، ثم إدخال رقم الهاتف والمبلغ المطلوب واختيار طريقة الدفع المناسبة لك.</p></div></div>
-    <div class="q-item"><button class="q-head"><div class="q-icon">+</div><div class="q-text">ما هي طرق الدفع المتاحة؟</div></button><div class="q-body"><p>نوفر عدة طرق للدفع تشمل البطاقات البنكية (فيزا وماستركارد)، والتحويل البنكي، وبطاقات الشحن المسبقة الدفع، بالإضافة إلى المحافظ الإلكترونية.</p></div></div>
-    <div class="q-item"><button class="q-head"><div class="q-icon">+</div><div class="q-text">هل الشحن عبر برق آمن؟</div></button><div class="q-body"><p>نعم، جميع المعاملات مشفرة بتقنية SSL ومحمية بأعلى معايير الأمان. بياناتك المالية لا تُخزَّن على خوادمنا ويتم معالجتها عبر بوابات دفع معتمدة دولياً.</p></div></div>
-    <div class="q-item"><button class="q-head"><div class="q-icon">+</div><div class="q-text">كم يستغرق وصول الشحن للرقم؟</div></button><div class="q-body"><p>يتم شحن الرصيد فوراً بمجرد إتمام عملية الدفع بنجاح. في حالات نادرة قد يستغرق الأمر حتى 5 دقائق.</p></div></div>
-    <div class="q-item"><button class="q-head"><div class="q-icon">+</div><div class="q-text">هل يمكنني شحن رصيد لرقم شخص آخر؟</div></button><div class="q-body"><p>بالتأكيد، يمكنك شحن الرصيد لأي رقم اوريدو سواء كان رقمك الشخصي أو رقم أي شخص آخر. فقط أدخل الرقم المراد شحنه.</p></div></div>
-    <div class="q-item"><button class="q-head"><div class="q-icon">+</div><div class="q-text">كيف أدفع فاتورة اوريدو الشهرية؟</div></button><div class="q-body"><p>اختر "دفع فواتير اوريدو" من الصفحة الرئيسية، ثم أدخل رقم الحساب أو رقم الهاتف وسيتم عرض الفاتورة المستحقة. اختر طريقة الدفع وأكمل العملية.</p></div></div>
-    <div class="q-item"><button class="q-head"><div class="q-icon">+</div><div class="q-text">ما الفرق بين شحن الرصيد وإعادة التعبئة؟</div></button><div class="q-body"><p>شحن الرصيد يضيف رصيداً جديداً لخطك مسبق الدفع، بينما إعادة التعبئة تجدد باقتك الحالية (بيانات، مكالمات، رسائل) عند انتهائها أو قبل انتهائها.</p></div></div>
-    <div class="q-item"><button class="q-head"><div class="q-icon">+</div><div class="q-text">هل هناك حد أدنى أو أقصى لمبلغ الشحن؟</div></button><div class="q-body"><p>الحد الأدنى للشحن هو 1 ريال والحد الأقصى يختلف حسب طريقة الدفع المستخدمة. البطاقات البنكية تسمح بشحن حتى 500 ريال في العملية الواحدة.</p></div></div>
-    <div class="q-item"><button class="q-head"><div class="q-icon">+</div><div class="q-text">ماذا أفعل إذا لم يصل الشحن؟</div></button><div class="q-body"><p>إذا لم يصل الشحن خلال 10 دقائق، تأكد أولاً من صحة الرقم المُدخل. إذا كان صحيحاً، تواصل مع خدمة العملاء عبر قسم "الدعم الفني" مع ذكر رقم العملية.</p></div></div>
-    <div class="q-item"><button class="q-head"><div class="q-icon">+</div><div class="q-text">هل يمكنني استرجاع مبلغ الشحن؟</div></button><div class="q-body"><p>يمكن استرجاع المبلغ فقط في حالة فشل عملية الشحن. إذا تم الشحن بنجاح للرقم الصحيح فلا يمكن الاسترجاع. في حالة الشحن لرقم خاطئ، تواصل مع الدعم الفني فوراً.</p></div></div>
-    <div class="q-item"><button class="q-head"><div class="q-icon">+</div><div class="q-text">هل أحتاج لإنشاء حساب لاستخدام برق؟</div></button><div class="q-body"><p>يمكنك الشحن كزائر بدون حساب. لكن إنشاء حساب يتيح لك مزايا إضافية مثل حفظ الأرقام المفضلة، سجل المعاملات، والحصول على عروض حصرية.</p></div></div>
-    <div class="q-item"><button class="q-head"><div class="q-icon">+</div><div class="q-text">هل تتوفر عروض وخصومات على الشحن؟</div></button><div class="q-body"><p>نعم، نقدم عروضاً وخصومات بشكل دوري على عمليات الشحن. تابع قسم "العروض" في الصفحة الرئيسية أو فعّل الإشعارات لتصلك أحدث العروض.</p></div></div>
-    <div class="q-item"><button class="q-head"><div class="q-icon">+</div><div class="q-text">هل يدعم برق جميع خطوط اوريدو؟</div></button><div class="q-body"><p>نعم، برق يدعم جميع أنواع خطوط اوريدو بما فيها الخطوط مسبقة الدفع والآجلة الدفع وخطوط الأعمال.</p></div></div>
-    <div class="q-item"><button class="q-head"><div class="q-icon">+</div><div class="q-text">كيف أتواصل مع خدمة العملاء؟</div></button><div class="q-body"><p>يمكنك التواصل معنا عبر قسم "الدعم الفني" في التطبيق، أو عبر البريد الإلكتروني، أو من خلال حساباتنا على مواقع التواصل الاجتماعي. فريق الدعم متاح على مدار الساعة.</p></div></div>
-    <div class="q-item"><button class="q-head"><div class="q-icon">+</div><div class="q-text">هل يمكنني جدولة شحن تلقائي؟</div></button><div class="q-body"><p>نعم، عند إنشاء حساب يمكنك تفعيل الشحن التلقائي الذي يقوم بشحن رصيدك تلقائياً عند وصوله لحد معين تحدده أنت، مع اختيار المبلغ وطريقة الدفع المفضلة.</p></div></div>
+  <h3 class="sec-t">الأسئلة الشائعة</h3>
+  <div id="faqWrap">
+    <div class="card"><button class="hd" onclick="toggle(this)"><div class="plus">+</div><span>كيف أشحن رصيد اوريدو عبر برق؟</span></button><div class="ans"><p>يمكنك شحن رصيد اوريدو بسهولة من خلال اختيار "شحن رصيد اوريدو" من الصفحة الرئيسية، ثم إدخال رقم الهاتف والمبلغ المطلوب واختيار طريقة الدفع المناسبة لك.</p></div></div>
+    <div class="card"><button class="hd" onclick="toggle(this)"><div class="plus">+</div><span>ما هي طرق الدفع المتاحة؟</span></button><div class="ans"><p>نوفر عدة طرق للدفع تشمل البطاقات البنكية (فيزا وماستركارد)، والتحويل البنكي، وبطاقات الشحن المسبقة الدفع، بالإضافة إلى المحافظ الإلكترونية.</p></div></div>
+    <div class="card"><button class="hd" onclick="toggle(this)"><div class="plus">+</div><span>هل الشحن عبر برق آمن؟</span></button><div class="ans"><p>نعم، جميع المعاملات مشفرة بتقنية SSL ومحمية بأعلى معايير الأمان. بياناتك المالية لا تُخزَّن على خوادمنا ويتم معالجتها عبر بوابات دفع معتمدة دولياً.</p></div></div>
+    <div class="card"><button class="hd" onclick="toggle(this)"><div class="plus">+</div><span>كم يستغرق وصول الشحن للرقم؟</span></button><div class="ans"><p>يتم شحن الرصيد فوراً بمجرد إتمام عملية الدفع بنجاح. في حالات نادرة قد يستغرق الأمر حتى 5 دقائق.</p></div></div>
+    <div class="card"><button class="hd" onclick="toggle(this)"><div class="plus">+</div><span>هل يمكنني شحن رصيد لرقم شخص آخر؟</span></button><div class="ans"><p>بالتأكيد، يمكنك شحن الرصيد لأي رقم اوريدو سواء كان رقمك الشخصي أو رقم أي شخص آخر. فقط أدخل الرقم المراد شحنه.</p></div></div>
+    <div class="card"><button class="hd" onclick="toggle(this)"><div class="plus">+</div><span>كيف أدفع فاتورة اوريدو الشهرية؟</span></button><div class="ans"><p>اختر "دفع فواتير اوريدو" من الصفحة الرئيسية، ثم أدخل رقم الحساب أو رقم الهاتف وسيتم عرض الفاتورة المستحقة. اختر طريقة الدفع وأكمل العملية.</p></div></div>
+    <div class="card"><button class="hd" onclick="toggle(this)"><div class="plus">+</div><span>ما الفرق بين شحن الرصيد وإعادة التعبئة؟</span></button><div class="ans"><p>شحن الرصيد يضيف رصيداً جديداً لخطك مسبق الدفع، بينما إعادة التعبئة تجدد باقتك الحالية (بيانات، مكالمات، رسائل) عند انتهائها أو قبل انتهائها.</p></div></div>
+    <div class="card"><button class="hd" onclick="toggle(this)"><div class="plus">+</div><span>هل هناك حد أدنى أو أقصى لمبلغ الشحن؟</span></button><div class="ans"><p>الحد الأدنى للشحن هو 1 ريال والحد الأقصى يختلف حسب طريقة الدفع المستخدمة. البطاقات البنكية تسمح بشحن حتى 500 ريال في العملية الواحدة.</p></div></div>
+    <div class="card"><button class="hd" onclick="toggle(this)"><div class="plus">+</div><span>ماذا أفعل إذا لم يصل الشحن؟</span></button><div class="ans"><p>إذا لم يصل الشحن خلال 10 دقائق، تأكد أولاً من صحة الرقم المُدخل. إذا كان صحيحاً، تواصل مع خدمة العملاء عبر قسم "الدعم الفني" مع ذكر رقم العملية.</p></div></div>
+    <div class="card"><button class="hd" onclick="toggle(this)"><div class="plus">+</div><span>هل يمكنني استرجاع مبلغ الشحن؟</span></button><div class="ans"><p>يمكن استرجاع المبلغ فقط في حالة فشل عملية الشحن. إذا تم الشحن بنجاح للرقم الصحيح فلا يمكن الاسترجاع. في حالة الشحن لرقم خاطئ، تواصل مع الدعم الفني فوراً.</p></div></div>
+    <div class="card"><button class="hd" onclick="toggle(this)"><div class="plus">+</div><span>هل أحتاج لإنشاء حساب لاستخدام برق؟</span></button><div class="ans"><p>يمكنك الشحن كزائر بدون حساب. لكن إنشاء حساب يتيح لك مزايا إضافية مثل حفظ الأرقام المفضلة، سجل المعاملات، والحصول على عروض حصرية.</p></div></div>
+    <div class="card"><button class="hd" onclick="toggle(this)"><div class="plus">+</div><span>هل تتوفر عروض وخصومات على الشحن؟</span></button><div class="ans"><p>نعم، نقدم عروضاً وخصومات بشكل دوري على عمليات الشحن. تابع قسم "العروض" في الصفحة الرئيسية أو فعّل الإشعارات لتصلك أحدث العروض.</p></div></div>
+    <div class="card"><button class="hd" onclick="toggle(this)"><div class="plus">+</div><span>هل يدعم برق جميع خطوط اوريدو؟</span></button><div class="ans"><p>نعم، برق يدعم جميع أنواع خطوط اوريدو بما فيها الخطوط مسبقة الدفع والآجلة الدفع وخطوط الأعمال.</p></div></div>
+    <div class="card"><button class="hd" onclick="toggle(this)"><div class="plus">+</div><span>كيف أتواصل مع خدمة العملاء؟</span></button><div class="ans"><p>يمكنك التواصل معنا عبر قسم "الدعم الفني" في التطبيق، أو عبر البريد الإلكتروني، أو من خلال حساباتنا على مواقع التواصل الاجتماعي. فريق الدعم متاح على مدار الساعة.</p></div></div>
+    <div class="card"><button class="hd" onclick="toggle(this)"><div class="plus">+</div><span>هل يمكنني جدولة شحن تلقائي؟</span></button><div class="ans"><p>نعم، عند إنشاء حساب يمكنك تفعيل الشحن التلقائي الذي يقوم بشحن رصيدك تلقائياً عند وصوله لحد معين تحدده أنت، مع اختيار المبلغ وطريقة الدفع المفضلة.</p></div></div>
   </div>
 
-  <div class="legal-section">
-    <h3 class="section-title">الصفحات القانونية</h3>
-    <div class="legal-grid">
-      <a class="legal-card" href="privacy.html"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg><span>سياسة الخصوصية</span></a>
-      <a class="legal-card" href="terms.html"><svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg><span>الشروط والأحكام</span></a>
-      <a class="legal-card" href="refund.html"><svg viewBox="0 0 24 24"><path d="M21 18v1c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v1h-9c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h9zm-9-2h10V8H12v8zm4-2.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg><span>سياسة الاسترجاع</span></a>
-      <a class="legal-card" href="disclaimer.html"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg><span>إخلاء المسؤولية</span></a>
+  <div class="pg-legal">
+    <h3 class="sec-t">الصفحات القانونية</h3>
+    <div class="row">
+      <a href="privacy.html"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg><span>سياسة الخصوصية</span></a>
+      <a href="terms.html"><svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg><span>الشروط والأحكام</span></a>
+      <a href="refund.html"><svg viewBox="0 0 24 24"><path d="M21 18v1c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v1h-9c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h9zm-9-2h10V8H12v8zm4-2.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg><span>سياسة الاسترجاع</span></a>
+      <a href="disclaimer.html"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg><span>إخلاء المسؤولية</span></a>
     </div>
   </div>
 </div>
 
-<div class="dark-layer" id="darkLayer"></div>
-<aside class="side-menu" id="sideMenu">
-  <div class="side-menu-head"><img src="logo.jpg" alt="Barq"><button class="close-menu" id="closeMenu">&times;</button></div>
+<div id="overlay" onclick="closeNav()"></div>
+<div id="drawer">
+  <div class="top"><img src="logo.jpg" alt="Barq"> <button class="xbtn" onclick="closeNav()">&times;</button></div>
   <nav>
     <a href="#">الرئيسية</a><a href="#">شحن الرصيد</a><a href="#">دفع الفواتير</a>
     <a href="#">العروض والباقات</a><a href="#">خدمة العملاء</a>
   </nav>
-</aside>
+</div>
 
 <footer>
-  <div class="footer-cols">
+  <div class="cols">
     <div>
       <h4>خدماتنا</h4>
-      <a href="#">شحن الرصيد</a>
-      <a href="#">دفع الفواتير</a>
-      <a href="#">إعادة التعبئة</a>
-      <a href="#">العروض والباقات</a>
+      <a href="#">شحن الرصيد</a><a href="#">دفع الفواتير</a><a href="#">إعادة التعبئة</a><a href="#">العروض والباقات</a>
     </div>
     <div>
       <h4>روابط مهمة</h4>
-      <a href="privacy.html">سياسة الخصوصية</a>
-      <a href="terms.html">الشروط والأحكام</a>
-      <a href="refund.html">سياسة الاسترجاع</a>
-      <a href="disclaimer.html">إخلاء المسؤولية</a>
+      <a href="privacy.html">سياسة الخصوصية</a><a href="terms.html">الشروط والأحكام</a><a href="refund.html">سياسة الاسترجاع</a><a href="disclaimer.html">إخلاء المسؤولية</a>
     </div>
   </div>
-  <div class="social-row">
+  <div class="soc">
     <a href="#"><svg viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg></a>
     <a href="#"><svg viewBox="0 0 24 24"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 01-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 017.8 2m-.2 2A3.6 3.6 0 004 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 003.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 110 2.5 1.25 1.25 0 010-2.5M12 7a5 5 0 110 10 5 5 0 010-10m0 2a3 3 0 100 6 3 3 0 000-6z"/></svg></a>
     <a href="#"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
     <a href="#"><svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.4a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.3a6.34 6.34 0 0010.86 4.46 6.21 6.21 0 001.86-4.42V8.73a8.19 8.19 0 004.72 1.49V6.79a4.85 4.85 0 01-1-.1z"/></svg></a>
   </div>
-  <div class="company-info">
-    <div class="name">برق الاتصال لتقنية المعلومات</div>
-    <div class="license">رخصة موحدة رقم: 1167730</div>
-    <div class="address">مكتب رقم 316، الخبيصي، دبي، الإمارات العربية المتحدة</div>
+  <div class="finfo">
+    <b>برق الاتصال لتقنية المعلومات</b>
+    <small>رخصة موحدة رقم: 1167730</small>
+    <small>مكتب رقم 316، الخبيصي، دبي، الإمارات العربية المتحدة</small>
   </div>
-  <div class="disclaimer-box">إخلاء مسؤولية: هذا الموقع هو منصة دليل ومساعدة إلكترونية مستقلة يهدف إلى توجيه ومساعدة المستخدمين بمعلومات وتفاصيل حول طرق وخطوات شحن رصيد أوريدو الكويت. نحن لسنا الجهة الرسمية أو البوابة المباشرة لشركة أوريدو، وجميع العلامات التجارية والأسماء المذكورة هي ملك لأصحابها وتُستخدم بغرض التوجيه والإرشاد فقط.</div>
-  <div class="copyright-row">
-    <span>&copy; 2026 جميع الحقوق محفوظة</span>
-    <a href="en.html">English</a>
-  </div>
+  <div class="disc">إخلاء مسؤولية: هذا الموقع هو منصة دليل ومساعدة إلكترونية مستقلة يهدف إلى توجيه ومساعدة المستخدمين بمعلومات وتفاصيل حول طرق وخطوات شحن رصيد أوريدو الكويت. نحن لسنا الجهة الرسمية أو البوابة المباشرة لشركة أوريدو، وجميع العلامات التجارية والأسماء المذكورة هي ملك لأصحابها وتُستخدم بغرض التوجيه والإرشاد فقط.</div>
+  <div class="cpr"><span>&copy; 2026 جميع الحقوق محفوظة</span> <a href="en.html">English</a></div>
 </footer>
 
 <script>
-(function(){
-  var menu = document.getElementById('sideMenu');
-  var layer = document.getElementById('darkLayer');
-  document.getElementById('menuBtn').addEventListener('click', function(){
-    menu.classList.add('show');
-    layer.classList.add('show');
-  });
-  function hideMenu(){ menu.classList.remove('show'); layer.classList.remove('show'); }
-  document.getElementById('closeMenu').addEventListener('click', hideMenu);
-  layer.addEventListener('click', hideMenu);
-
-  document.getElementById('questionsList').addEventListener('click', function(ev){
-    var btn = ev.target.closest('.q-head');
-    if(!btn) return;
-    var parent = btn.parentElement;
-    var wasOpen = parent.classList.contains('open');
-    var allOpen = document.querySelectorAll('.q-item.open');
-    for(var i = 0; i < allOpen.length; i++) allOpen[i].classList.remove('open');
-    if(!wasOpen) parent.classList.add('open');
-  });
-})();
+function openNav(){document.getElementById('drawer').classList.add('on');document.getElementById('overlay').classList.add('on')}
+function closeNav(){document.getElementById('drawer').classList.remove('on');document.getElementById('overlay').classList.remove('on')}
+function toggle(btn){
+  var c=btn.parentElement;
+  var open=c.classList.contains('active');
+  var all=document.querySelectorAll('#faqWrap .card.active');
+  for(var i=0;i<all.length;i++) all[i].classList.remove('active');
+  if(!open) c.classList.add('active');
+}
 </script>
 </body>
 </html>
