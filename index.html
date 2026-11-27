@@ -47,24 +47,33 @@ body{font-family:'Tajawal',sans-serif;background:#f8f8fa;color:#1a1a1a;overflow-
 #drawer .top img{height:26px}
 #drawer .xbtn{width:28px;height:28px;border-radius:50%;background:#f5f5f5;border:0;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center}
 #drawer nav a{display:block;padding:11px 0;border-bottom:1px solid #eee;color:#1a1a1a;text-decoration:none;font-size:14px;font-weight:500}
-footer{background:#efefef;font-size:12px;line-height:1.65;color:#222}
-footer .cols{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid #ddd}
+footer{background:#1b1b2f;font-size:12px;line-height:1.65;color:#aaa;position:relative}
+footer::before{content:'';display:block;height:3px;background:linear-gradient(90deg,#e30613 0%,#ff4757 50%,#e30613 100%)}
+.ft-top{text-align:center;padding:22px 15px 18px;border-bottom:1px solid rgba(255,255,255,.07)}
+.ft-top img{height:28px;padding:5px 10px;background:#fff;border-radius:6px}
+.ft-top p{margin-top:8px;font-size:11px;color:#666}
+footer .cols{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid rgba(255,255,255,.07)}
 footer .cols>div{padding:18px 15px}
-footer .cols>div:first-child{border-left:1px solid #ddd}
-footer h4{font-size:12px;font-weight:700;margin-bottom:10px;color:#222}
-footer a{display:block;color:#222;text-decoration:none;font-size:11px;padding:3px 0}
-footer a:hover{color:#e30613}
-.soc{display:flex;justify-content:center;gap:10px;padding:18px 15px;border-bottom:1px solid #ddd}
-.soc a{width:34px;height:34px;border-radius:50%;background:#ddd;display:flex;align-items:center;justify-content:center}
-.soc a:hover{background:#e30613}
-.soc svg{width:15px;height:15px;fill:#666}
+footer .cols>div:first-child{border-left:1px solid rgba(255,255,255,.07)}
+footer h4{font-size:11px;font-weight:700;margin-bottom:10px;color:#fff;letter-spacing:.3px}
+footer .cols a{display:block;color:#888;text-decoration:none;font-size:11px;padding:4px 0;transition:.2s}
+footer .cols a:hover{color:#ff4757}
+.soc{display:flex;justify-content:center;gap:12px;padding:20px 15px;border-bottom:1px solid rgba(255,255,255,.07)}
+.soc a{width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.07);display:flex;align-items:center;justify-content:center;transition:.25s}
+.soc a:hover{transform:translateY(-3px)}
+.soc a:nth-child(1):hover{background:#1877f2}
+.soc a:nth-child(2):hover{background:#e1306c}
+.soc a:nth-child(3):hover{background:#14171a}
+.soc a:nth-child(4):hover{background:#fe2c55}
+.soc svg{width:15px;height:15px;fill:#777}
 .soc a:hover svg{fill:#fff}
-.finfo{padding:15px;text-align:center}
-.finfo b{display:block;font-size:12px;color:#222;margin-bottom:3px}
-.finfo small{display:block;font-size:10px;color:#222;margin-bottom:2px}
-.disc{margin:0 15px;padding:11px;border-radius:7px;background:#e6e6e6;border:1px solid #d9d9d9;font-size:10px;color:#222;line-height:1.75;text-align:center}
-.cpr{display:flex;justify-content:center;align-items:center;gap:14px;padding:13px 15px;margin-top:10px;border-top:1px solid #ddd}
-.cpr span,.cpr a{font-size:10px;color:#222;text-decoration:none}
+.finfo{padding:18px 15px;text-align:center}
+.finfo b{display:block;font-size:12px;color:#ddd;margin-bottom:4px}
+.finfo small{display:block;font-size:10px;color:#666;margin-bottom:2px}
+.disc{margin:0 15px;padding:12px;border-radius:8px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);font-size:10px;color:#555;line-height:1.75;text-align:center}
+.cpr{display:flex;justify-content:center;align-items:center;gap:14px;padding:14px 15px;margin-top:12px;border-top:1px solid rgba(255,255,255,.07)}
+.cpr span{font-size:10px;color:#555}
+.cpr a{font-size:10px;color:#e30613;text-decoration:none;font-weight:600}
 </style>
 </head>
 <body>
@@ -124,6 +133,10 @@ footer a:hover{color:#e30613}
 </div>
 
 <footer>
+  <div class="ft-top">
+    <img src="logo.jpg" alt="Barq">
+    <p>منصة الشحن والدفع الذكية لاوريدو الكويت</p>
+  </div>
   <div class="cols">
     <div>
       <h4>خدماتنا</h4>

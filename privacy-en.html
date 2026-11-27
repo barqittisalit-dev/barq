@@ -30,26 +30,35 @@ body{font-family:'Inter',sans-serif;background:#f8f8fa;color:#111;overflow-x:hid
 #main ul{padding-left:20px;margin-bottom:12px}
 #main li{font-size:12px;line-height:1.9;color:#555;margin-bottom:4px}
 #main .date{font-size:11px;color:#999;margin-bottom:20px}
-footer{background:#efefef;color:#222;font-size:12px;line-height:1.7}
-footer .cols{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid #ddd}
-footer .cols div{padding:20px 16px}
-footer .cols div:first-child{border-right:1px solid #ddd}
-footer .cols h4{color:#222;font-size:12px;font-weight:700;margin-bottom:12px}
-footer .cols a{display:block;color:#222;text-decoration:none;font-size:11px;padding:4px 0;transition:.15s color}
-footer .cols a:hover{color:#e30613}
-.socials{display:flex;justify-content:center;gap:12px;padding:20px 16px;border-bottom:1px solid #ddd}
-.socials a{width:36px;height:36px;border-radius:50%;background:#ddd;display:flex;align-items:center;justify-content:center;transition:.15s background}
-.socials a:hover{background:#e30613}
-.socials svg{width:16px;height:16px;fill:#666}
+footer{background:#1b1b2f;color:#aaa;font-size:12px;line-height:1.7;position:relative}
+footer::before{content:'';display:block;height:3px;background:linear-gradient(90deg,#e30613 0%,#ff4757 50%,#e30613 100%)}
+.ft-top{text-align:center;padding:22px 15px 18px;border-bottom:1px solid rgba(255,255,255,.07)}
+.ft-top img{height:28px;padding:5px 10px;background:#fff;border-radius:6px}
+.ft-top p{margin-top:8px;font-size:11px;color:#666}
+footer .cols{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid rgba(255,255,255,.07)}
+footer .cols div{padding:18px 15px}
+footer .cols div:first-child{border-right:1px solid rgba(255,255,255,.07)}
+footer .cols h4{color:#fff;font-size:11px;font-weight:700;margin-bottom:10px;letter-spacing:.3px}
+footer .cols a{display:block;color:#888;text-decoration:none;font-size:11px;padding:4px 0;transition:.2s}
+footer .cols a:hover{color:#ff4757}
+.socials{display:flex;justify-content:center;gap:12px;padding:20px 15px;border-bottom:1px solid rgba(255,255,255,.07)}
+.socials a{width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.07);display:flex;align-items:center;justify-content:center;transition:.25s}
+.socials a:hover{transform:translateY(-3px)}
+.socials a:nth-child(1):hover{background:#1877f2}
+.socials a:nth-child(2):hover{background:#e1306c}
+.socials a:nth-child(3):hover{background:#14171a}
+.socials a:nth-child(4):hover{background:#fe2c55}
+
+.socials svg{width:15px;height:15px;fill:#777}
 .socials a:hover svg{fill:#fff}
-.info{padding:16px;text-align:center}
-.info .name{color:#222;font-size:12px;font-weight:700;margin-bottom:4px}
-.info .license{color:#222;font-size:10px;margin-bottom:2px}
-.info .address{color:#222;font-size:10px;margin-bottom:12px}
-.notice{margin:0 16px;padding:12px;border-radius:8px;background:#e6e6e6;border:1px solid #ddd;font-size:10px;color:#222;line-height:1.8;text-align:center}
-.bottom{display:flex;justify-content:center;align-items:center;gap:16px;padding:14px 16px;margin-top:12px;border-top:1px solid #ddd}
-.bottom span{color:#222;font-size:10px}
-.bottom a{color:#222;font-size:10px;text-decoration:none}
+.info{padding:18px 15px;text-align:center}
+.info .name{color:#ddd;font-size:12px;font-weight:700;margin-bottom:4px}
+.info .license{color:#666;font-size:10px;margin-bottom:2px}
+.info .address{color:#666;font-size:10px;margin-bottom:12px}
+.notice{margin:0 15px;padding:12px;border-radius:8px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);font-size:10px;color:#555;line-height:1.8;text-align:center}
+.bottom{display:flex;justify-content:center;align-items:center;gap:14px;padding:14px 15px;margin-top:12px;border-top:1px solid rgba(255,255,255,.07)}
+.bottom span{color:#555;font-size:10px}
+.bottom a{color:#e30613;font-size:10px;text-decoration:none;font-weight:600}
 </style>
 </head>
 <body>
@@ -139,6 +148,10 @@ footer .cols a:hover{color:#e30613}
 </div>
 
 <footer>
+  <div class="ft-top">
+    <img src="logo.jpg" alt="Barq">
+    <p>Smart Recharge & Payment Platform for Ooredoo Kuwait</p>
+  </div>
   <div class="cols">
     <div>
       <h4>Our Services</h4>
